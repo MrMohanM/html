@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #ddd;
+    padding: 15px;
+    min-height: 100vh;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Tank Section */
+.tank-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.tank {
+    width: 150px;
+    height: 250px;
+    background: #ccc;
+    border: 3px solid black;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.water {
+    width: 100%;
+    background: linear-gradient(180deg, #00b4d8, #0077b6);
+    position: absolute;
+    bottom: 0;
+    transition: height 1s ease-in-out;
+}
+
+.water-text {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Cards Section */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* News Section */
+.news-section {
+    width: 200px;
+    background: #f8f9fa;
+    padding: 10px;
+    height: 100vh;
+}
+
+/* Input Section */
+.input-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

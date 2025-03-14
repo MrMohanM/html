@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://via.placeholder.com/50" alt="Logo" class="header-logo">
+        <h1 class="header-title">Water Tracker</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <img src="https://via.placeholder.com/50" alt="Right Logo" class="header-right-logo">
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <!-- Left Sidebar (Menu) -->
+        <div class="sidebar">
+            <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+            <ul class="menu" id="menu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Water Usage</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+
+        <!-- Center Content -->
+        <div class="main-content">
+            <!-- Water Tank -->
+            <div class="tank-container">
+                <div class="tank">
+                    <div class="water" id="water-level" style="height: 50%;"></div>
+                    <span class="water-text" id="water-text">50%</span>
+                </div>
+            </div>
+
+            <!-- Water Quality -->
+            <div class="water-quality">
+                <h2>Water Quality Status</h2>
+                <p>pH Level: 7.2</p>
+                <p>Turbidity: Low</p>
+                <p>Chlorine Level: Safe</p>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="cards-container">
+                <div class="card">🚰 Water Usage</div>
+                <div class="card">💧 Conservation Tips</div>
+                <div class="card">📊 Reports</div>
+                <div class="card">⚙ Settings</div>
+            </div>
+        </div>
+
+        <!-- Right Scrolling News -->
+        <div class="news-section">
+            <h3>Latest News</h3>
+            <marquee behavior="scroll" direction="up" scrollamount="2">
+                - Water Conservation Awareness Week<br>
+                - New Water Tariffs Announced<br>
+                - Community Rainwater Harvesting Project
+            </marquee>
+        </div>
+    </div>
+
+    <!-- Water Level Input -->
+    <div class="input-section">
+        <label for="water-input">Set Water Level (%): </label>
+        <input type="number" id="water-input" min="0" max="100" value="50">
+        <button onclick="updateWaterLevel()">Update</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Water Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
